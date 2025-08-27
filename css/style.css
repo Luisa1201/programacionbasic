@@ -1,13 +1,138 @@
-  h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: red;
-        }
+/* Estilos para etiquetas semánticas */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(61, 60, 65);
+    background-color: rgb(199, 175, 94);
+    margin: 0;
+    padding: 0;
+    
+}
+main{
+    width:60%;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        h5,
-        h6 {
-            color: rgb(56, 92, 190);
-        }
+header{
+    background-color: rgb(199, 192, 131);
+    color: rgb(17, 19, 19);
+    padding: 20px;
+    text-align: center;
+}
+
+/* ####### Estilo para menú de navegación ####### */
+
+.menu_nav {
+    background-color: rgb(187, 111, 19);
+    text-align: center;
+    padding: 10px;
+}
+
+.menu_nav ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+.menu_nav ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu_nav ul li a{
+    color: rgb(195, 207, 207);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+.menu_nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(251, 251, 253);
+}
+
+/* Estilos para menu de navegación
+nav{
+    background-color: rgb(187, 111, 19);
+    text-align: center;
+    padding: 10px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: aquamarine;
+
+} */
+.submenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top:100%;
+    background-color: rgb(204, 138, 58);
+    min-width: 200px;
+}
+.menu_item:hover .submenu {
+    display: block;
+
+}
+
+.submenu li{
+    display: block;
+}
+
+.submenu li a:hover{
+    background-color: rgb(221, 220, 163);
+}
+
+/* ####### Estilo para la tabla ####### */
+h2{
+    color: rgb(187, 111, 19);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table, th, td{
+    border: 1px solid #ccc;
+}
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+thead{
+    background-color: rgb(240, 202, 152);
+}
+
+tbody{
+    background-color: rgb(229, 229, 188);
+}
+
+/* ####### Estilo para footer ####### */
+footer{
+    background-color: rgb(187, 111, 19);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer p{
+    margin: 0;
+} 

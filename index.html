@@ -4,21 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programación Básica</title>
+    <link rel="icon" href="img/imagen2.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
+    <title>Páginaweb</title>
 </head>
 
 <body>
-    <img src="img/flor.jpg" alt="Imagen de flor">
-    <button onclick="Cambiarcolor()"> CÓDIGO</button>
-    <h1 id="title">Luisa Fernanda</h1>
-    <h2>Luisa</h2>
-    <h3>Luisa</h3>
-    <h4>Luisa</h4>
-    <h5>Luisa</h5>
-    <h6>Luisa</h6>
+    <!-- Cabecera pincipal del sitio web -->
+    <header>
+        <h1>Guia de Etiquetas</h1>
+        <p>Estoy aprendiendo como usar etiquetas en HTML para estructurar un sitio web.</p>
+    </header>
 
- <script src="js/function.js"></script>
+    <!-- Menú de navegación -->
+
+    <nav class="menu_nav">
+        <ul>
+            <li><a href="">Encabezado</a></li>
+            <li><a href="">Contenido principal</a></li>
+            <li><a href="">Pie de pagina</a></li>
+            <!-- Menu desplegable -->
+             <li class="menu_item">
+                <a href="">Etiquetas</a>
+                <ul class="submenu">
+                    <li><a href="">Etiquetas 1</a></li>
+                    <li><a href="">Etiquetas 1</a></li>
+                    <li><a href="">Etiquetas 1</a></li>
+                </ul>
+             </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+
+    <main>
+        <section>
+            <h2>¿Qué son las etiquetas semánticas</h2>
+            <p>Las etiquetas semánticas en HTML sirven para definir una estructura clara de mi sitio web.</p>
+        </section>
+        <section>
+            <h2>Tabla de etiquetas semánticas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ETIQUETA</th>
+                        <th>DESCRIPCION</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;header&gt;</code></td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;nav&gt;</code></td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;main&gt;</code></td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;nav&gt;</code></td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;footer&gt;</code></td>
+                        <td>123</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+        <!-- pie pagina -->
+        <footer>
+            <p>Todos los derechos reservados - Sitio creado por LuisaAcosta - @2025</p>
+        </footer>
 </body>
 
 </html>
