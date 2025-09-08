@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylejs.css">
+    <link rel="icon" href="../img/imagenjs.png" type="image/png">
+    <title>Eventos JS</title>
+</head>
+<body>
+    <h1>Eventos JS</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Eventos Javascript</th>
+            <th>Descripción</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+
+        <tr>
+            <th><p>onblur</p>
+                <h4>Introduce tu nombre:
+                    <input type="text" id="fname" onblur="myfunction()">
+                </h4>
+            </th>
+            <th>Cuando un usuario abandona un campo de entrada.</th>
+        </tr>
+
+         <tr>
+            <th><p>onchange</p>
+                <form> Elige el navegador que prefieras:
+                    <select id="browsers" onchange="preferedBrowser()">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Internet Explorer">Internet Explorer</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Opera">Opera</option>
+                    </select>
+                </form>
+            </th>
+            <th>Cuando el usuario selecciona un valor desplegable.</th>
+        </tr>
+
+        <tr>
+            <th><p>onsubmit</p>
+                <form onsubmit="confirmInput()" action="https://lenguajejs.com/eventos/introduccion/que-son-eventos/">
+                    Introduce tu nombre: <input id="fnamey" type="text" size="20">
+                    <input type="submit">
+                </form>
+            </th>
+            <th>Cuando un usuario hace clic en el botón Enviar.</th>
+        </tr>
+
+        <tr>
+            <th><p>onreset</p>
+
+                <form onreset="message()">
+                 Introduce tu nombre: <input type="text" size="20">
+                <input type="reset">
+                </form>
+            </th>
+            <th>Cuando un usuario hace clic en el botón reinicio.</th>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+    <script>
+
+      function myfunction(){
+        const x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+      }
+
+      function preferedBrowser(){
+        prefer = document.forms[0].browsers.value;
+        alert("Prefieres navegar por internet con: " + prefer);
+      }
+
+      function confirmInput(){
+        fnamey = document.forms[1].fnamey.value;
+        alert("Hola" + fnamey + "Serás redirigido a https://lenguajejs.com/eventos/introduccion/que-son-eventos/");
+      }
+
+      function message(){
+      alert("Este cuadro de alerta fue activado por el controlador de eventos onreset");
+      }
+
+    </script>
+
+    
+    
+</body>
+</html>

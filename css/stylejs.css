@@ -1,0 +1,131 @@
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #d1e1f8;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #131fbd;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Tabla */
+table {
+  width: 70%;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+thead th{
+    background: #333;
+    color: #1379bd;
+    font-size: 1.2em;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #09236b;
+  
+}
+
+th input[type="text"] {
+  margin-top: 8px;   
+  margin-left: 15px;  
+}
+
+table p{
+    color:rgb(19, 0, 128)
+}
+
+th {
+  background: #8cc5e5;
+  color: rgb(19, 8, 8);
+  font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #051a06;
+  transition: 0.3s ease;
+}
+
+/* Input */
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #4417ac;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #af4c96;
+  box-shadow: 0 0 5px rgba(23, 128, 26, 0.5);
+}
+
+table select {
+  padding: 8px 12px;
+  border: 2px solid;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1em;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-bottom: 15px
+}
+
+/* Estilo para el botón enviar */
+input[type="submit"] {
+  background-color: #1379bd;   
+  color: white;                
+  padding: 8px 20px;         
+  border: none;               
+  border-radius: 6px;         
+  font-size: 1em;             
+  font-weight: bold;           
+  cursor: pointer;             
+  transition: background-color 0.2s ease, transform 0.1s ease;
+margin-bottom: 15px
+}
+
+/* Efecto al pasar el mouse */
+input[type="submit"]:hover {
+  background-color: #3a86b9;   
+  transform: scale(1.05);     
+}
+
+/* Estilo para el botón reinicio y borra lo escrito en los campos */
+input[type="reset"] {
+  background-color: #1379bd;   
+  color: white;                
+  padding: 8px 20px;         
+  border: none;               
+  border-radius: 6px;         
+  font-size: 1em;             
+  font-weight: bold;           
+  cursor: pointer;             
+  transition: background-color 0.2s ease, transform 0.1s ease;
+margin-bottom: 15px
+}
+
+/* Efecto al pasar el mouse */
+input[type="reset"]:hover {
+  background-color: #3a86b9;   
+  transform: scale(1.05);     
+}
+
+
